@@ -1,0 +1,105 @@
+* {
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.pink-bg {
+  background: linear-gradient(135deg, #ffd1dc, #ff9ebc);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Card */
+.card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(255, 105, 180, 0.3);
+}
+
+.card h1 {
+  color: #ff5fa2;
+}
+
+input {
+  padding: 10px;
+  width: 100%;
+  margin: 15px 0;
+  border-radius: 10px;
+  border: 1px solid #ff9ebc;
+}
+
+button, .btn {
+  background: #ff5fa2;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 20px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+button:hover, .btn:hover {
+  background: #ff2f8f;
+}
+
+/* Home Layout */
+.home-container {
+  display: flex;
+  align-items: center;
+}
+
+.home-card {
+  max-width: 400px;
+}
+
+.message {
+  color: #ff5fa2;
+  margin: 15px 0;
+}
+
+.birthday-img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+/* Tulips */
+.tulip {
+  width: 120px;
+}
+
+.left {
+  margin-right: 20px;
+}
+
+.right {
+  margin-left: 20px;
+}
+
+/* Balloons */
+.balloon {
+  position: absolute;
+  bottom: -100px;
+  width: 60px;
+  height: 80px;
+  background: pink;
+  border-radius: 50%;
+  animation: float 8s infinite ease-in;
+}
+
+.balloon1 { left: 20%; animation-delay: 0s; }
+.balloon2 { left: 50%; animation-delay: 2s; }
+.balloon3 { left: 80%; animation-delay: 4s; }
+
+@keyframes float {
+  0% { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(-120vh); opacity: 0; }
+}
